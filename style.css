@@ -99,14 +99,13 @@ nav{position: relative;}
     z-index:2
 }
 /**<---HEADER SLIDER--->*/
-#header_slider{
-    height: fit-content;
-}
+#header_slider{height: fit-content;}
 .models{
     display: flex;
     justify-content: space-between;
-    overflow-y: hidden;
+    overflow-x: scroll;
 }
+.models::-webkit-scrollbar {display: none;}
 .model{
     display: flex;
     flex-direction: column;
@@ -161,12 +160,8 @@ nav{position: relative;}
     color: #8B887E;
     margin: 15px 0;
 }
-.titanium_name{
-    width: 220px;
-}
-.titanium_name img{
-    width: 100%;
-}
+.titanium_name{width: 220px;}
+.titanium_name img{width: 100%;}
 .titanium_contetn p{
     font: 0.9rem Arial, Helvetica, sans-serif;
     color: #fff;
@@ -214,9 +209,7 @@ nav{position: relative;}
     width: 100%;;
     margin-top: 20px;
 }
-.newphoria_img img{
-    width: 100%;
-}
+.newphoria_img img{width: 100%;}
 
 /**LOVE IPHONE*/
 #loveIphone{
@@ -244,20 +237,14 @@ nav{position: relative;}
     margin: 20px 0;
     text-align: center;
 }
-#loveIphone .btn_buy{
-    margin: 10px 0;
-}
-#loveIphone .blue_href a{
-    margin: 10px 0;
-}
+#loveIphone .btn_buy{margin: 10px 0;}
+#loveIphone .blue_href a{margin: 10px 0;}
 .love_img{
     width: 50%;
     margin: auto;
     margin-top: 20px;
 }
-.love_img img{
-    width: 100%;
-}
+.love_img img{width: 100%;}
 
 /**APPLE BG*/
 #appleBg{
@@ -299,9 +286,7 @@ nav{position: relative;}
     height: fit-content;
     padding: 50px 0;
 }
-#compare h1{
-    margin-bottom: 40px;
-}
+#compare h1{margin-bottom: 40px;}
 .phones_spesc{
     display: flex;
     align-items: center;
@@ -318,9 +303,7 @@ nav{position: relative;}
     justify-content: center;
     margin-bottom: 15px;
 }
-.phone_img{
-    height: 30vh;
-}
+.phone_img{height: 30vh;}
 .phone_img img{
     height: 100%;
     margin: auto;
@@ -449,9 +432,7 @@ nav{position: relative;}
     margin-bottom: 30px;
 }
 .ios17 .ios_img{display: none;}
-.ios_img{
-    width: 100%;
-}
+.ios_img{width: 100%;}
 .more_adore img{
     height: 40vh;
     width: 100%;
@@ -564,9 +545,7 @@ nav{position: relative;}
     font: 0.9rem arial;
     padding: 15px 0;
 }
-.acc_list input{
-    display: none;
-}
+.acc_list input{display: none;}
 .accordion .content{
     height: 0;
     overflow: hidden;
@@ -657,25 +636,15 @@ nav{position: relative;}
         transition: .3s;
         background-color: #624d4d;
     }
-    #navbar ul a:hover:before{
-        transform: scale(1);
-    }
+    #navbar ul a:hover:before{transform: scale(1);}
 
     /**<---TITANIUM--->*/
-    .titanium_img{
-        margin: 70px 0;
-    }
-    .titanium_img img{
-        transform: rotate(0);
-    }
-    #titanium .btn_buy a:hover{
-        box-shadow: 3px 5px 7px 1px rgba(255,255,255,0.7);
-    }
+    .titanium_img{margin: 70px 0;}
+    .titanium_img img{transform: rotate(0);}
+    #titanium .btn_buy a:hover{box-shadow: 3px 5px 7px 1px rgba(255,255,255,0.7);}
     
     /**<---NEWPHORIA--->*/
-    .newphoria_contetn h3{
-        font: 500 2.8rem Arial;
-    }
+    .newphoria_contetn h3{font: 500 2.8rem Arial;}
     
     /**LOVE IPHONE*/
     .loveIphone_content{
@@ -707,9 +676,7 @@ nav{position: relative;}
         flex-direction: column;
         align-items:start;
     }
-    .apple_bg_content h4{
-        color: #fff;
-    }
+    .apple_bg_content h4{color: #fff;}
     .apple_bg_content h3{
         font: 500 2.8rem arial;
         color: #fff;
@@ -721,22 +688,14 @@ nav{position: relative;}
         padding: 8px 20px;
     }
     .apple_bg_content i{display: none;}
-    .apple_bg_img img{
-        border-radius: 50px;
-    }
+    .apple_bg_img img{border-radius: 50px;}
 
     /**<---COMPARE--->*/
-    .phones_spesc{
-        justify-content:space-between;
-    }
+    .phones_spesc{justify-content:space-between;}
 
     /**<---SAVE--->*/
-    .save_cards{
-        flex-direction: row;
-    }
-    .save_card{
-        max-width: 700px;
-    }
+    .save_cards{flex-direction: row;}
+    .save_card{max-width: 700px;}
 
     /**<---APPLE BEST--->*/
     .apple_img img{
@@ -776,9 +735,7 @@ nav{position: relative;}
     }
     .column{
         flex-direction: column;
-        .accessory_info {
-            width: 100%;
-        }
+        .accessory_info {width: 100%;}
     }
 
     /**<===BUY INFORMATION===>*/
@@ -793,9 +750,7 @@ nav{position: relative;}
             width: 100%;
         }
     }
-    .ios17 .ios_img img{
-        height: 50vh;
-    }
+    .ios17 .ios_img img{height: 50vh;}
     .ios_img{width: 100%;}
     .ios_img img{
         height: 40vh;
@@ -859,9 +814,7 @@ nav{position: relative;}
         padding: 0;
         margin: 30px 0 10px;
     }
-    .acc_list label{
-        cursor: initial;
-    }
+    .acc_list label{cursor: initial;}
 }
 
 @media (max-width:991px) {
