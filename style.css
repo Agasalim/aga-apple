@@ -294,7 +294,7 @@ nav{position: relative;}
     flex-wrap: wrap;
 }
 .phone{
-    max-width: 180px;
+    width: 50%;
     margin-top: 30px;
     padding: 0 10px;
 }
@@ -366,6 +366,7 @@ nav{position: relative;}
     width: 100%;
 }
 .card_img{
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -562,6 +563,7 @@ nav{position: relative;}
 #ninth:checked~.content{height: 50px;}
 #tenth:checked~.content{height: 180px;}
 #eleventh:checked~.content{height: 180px;}
+
 .acc_list a{
     display: block;
     text-decoration: none;
@@ -637,7 +639,7 @@ nav{position: relative;}
         background-color: #624d4d;
     }
     #navbar ul a:hover:before{transform: scale(1);}
-
+    
     /**<---TITANIUM--->*/
     .titanium_img{margin: 70px 0;}
     .titanium_img img{transform: rotate(0);}
@@ -663,7 +665,7 @@ nav{position: relative;}
         font:600 3rem Arial, Helvetica, sans-serif;
         margin: 10px 0;
     }
-
+    
     /**APPLE BG*/
     .apple_bg_img{position: relative;}
     .apple_bg_content{
@@ -689,14 +691,20 @@ nav{position: relative;}
     }
     .apple_bg_content i{display: none;}
     .apple_bg_img img{border-radius: 50px;}
-
+    
     /**<---COMPARE--->*/
     .phones_spesc{justify-content:space-between;}
+    .phone{width: 25%;}
 
+    
     /**<---SAVE--->*/
-    .save_cards{flex-direction: row;}
+    .save_cards{flex-direction: row; margin-top: 30px;}
     .save_card{max-width: 700px;}
-
+    .card_img{
+        width: 100%;
+        margin: auto;
+    }
+    
     /**<---APPLE BEST--->*/
     .apple_img img{
         width: 100%;
@@ -737,11 +745,11 @@ nav{position: relative;}
         flex-direction: column;
         .accessory_info {width: 100%;}
     }
-
+    
     /**<===BUY INFORMATION===>*/
     .buy_info{display: flex;}
     .b_info{width: 33.3%;}
-
+    
     /**<===ADORE iPHONE===>*/
     .ios17{width: 100%;}
     .ios17 .ios_img{
@@ -761,7 +769,7 @@ nav{position: relative;}
         gap: 30px;
     }
     .adore{width: 50%;}
-
+    
     /**<===APPLE ONE===>*/
     .one{
         display: flex;
@@ -772,7 +780,7 @@ nav{position: relative;}
         width: 50%;
     }
     .one_img img{width: 100%;}
-
+    
     /**<===APPLE PLAY CARDS===>*/
     .black_card, .white_card{width: 50%;}
     .tv_music, .fitness_arcade, .news_gift{
@@ -785,7 +793,7 @@ nav{position: relative;}
         height: 45vh;
         object-fit: cover;
     }
-
+    
     /**<===RESEARCH APPLE===>*/
     .research{
         display: flex;
@@ -793,7 +801,7 @@ nav{position: relative;}
         padding: 70px 20px;
     }
     .research_content, .research_img{width: 50%;}
-
+    
     /**<===IPHONE ACCARDION===>*/
     .f_apple{margin:0 0 20px 0;}
     .acc_list label i{display: none;}
@@ -816,7 +824,6 @@ nav{position: relative;}
     }
     .acc_list label{cursor: initial;}
 }
+@media only screen and (max-width:320px) {.phone{width: 100%;}}
 
-@media (max-width:991px) {
-    .save_cards{flex-wrap: wrap;}
-}
+@media (max-width:991px) {.save_cards{flex-wrap: wrap;}}
