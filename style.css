@@ -80,7 +80,7 @@ nav{position: relative;}
     position: absolute;
     top: 100%;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     left: -150%;
     right: 0;
     padding-top: 20px;
@@ -563,7 +563,24 @@ nav{position: relative;}
 #ninth:checked~.content{height: 50px;}
 #tenth:checked~.content{height: 180px;}
 #eleventh:checked~.content{height: 180px;}
-
+label i{
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+#first:checked ~ label i,
+#second:checked ~ label i,
+#third:checked ~ label i,
+#fourth:checked ~ label i,
+#fifth:checked ~ label i,
+#sixth:checked ~ label i,
+#seventh:checked ~ label i,
+#eighth:checked ~ label i,
+#ninth:checked ~ label i,
+#tenth:checked ~ label i,
+#eleventh:checked ~ label i{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
 .acc_list a{
     display: block;
     text-decoration: none;
@@ -670,8 +687,9 @@ nav{position: relative;}
     .apple_bg_img{position: relative;}
     .apple_bg_content{
         position: absolute;
-        left: 5%;
-        top: 40%;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .apple_bg_content{
         display: flex;
@@ -825,5 +843,4 @@ nav{position: relative;}
     .acc_list label{cursor: initial;}
 }
 @media only screen and (max-width:320px) {.phone{width: 100%;}}
-
 @media (max-width:991px) {.save_cards{flex-wrap: wrap;}}
